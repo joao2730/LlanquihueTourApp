@@ -9,13 +9,8 @@
 ---
 
 ## 📘 Descripción general del sistema
-LlanquihueTourApp es una aplicación desarrollada en Java que simula la gestión de servicios turísticos ofrecidos por una agencia de turismo de la comuna de Llanquihue, Región de Los Lagos.
 
-El sistema aplica los principios de la Programación Orientada a Objetos (POO), utilizando herencia para modelar distintos tipos de servicios turísticos que comparten características comunes, como el nombre y la duración, y que además poseen atributos específicos según su categoría.
-
-La aplicación incluye una superclase llamada ServicioTuristico y tres subclases: RutaGastronomica, PaseoLacustre y ExcursionCultural. A través de una clase gestora se crean instancias de cada servicio y, desde la clase principal, se muestran sus datos por consola utilizando el método toString() sobrescrito en cada subclase.
-
-Este proyecto tiene como objetivo demostrar el uso de conceptos fundamentales de Java, como encapsulamiento, herencia, constructores, sobrescritura de métodos, organización por paquetes y reutilización de código mediante una estructura orientada a objetos.
+LlanquihueTourApp es una aplicación desarrollada en Java para gestionar distintos servicios turísticos mediante Programación Orientada a Objetos. El sistema utiliza herencia, polimorfismo y colecciones para organizar y mostrar la información de forma flexible y escalable.
 
 ---
 
