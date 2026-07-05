@@ -3,44 +3,42 @@ package data;
 import model.ExcursionCultural;
 import model.PaseoLacustre;
 import model.RutaGastronomica;
+import model.ServicioTuristico;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Crea objetos de prueba.
  */
 public class GestorServicios {
 
-    public void mostrarServicios() {
+    private List<ServicioTuristico> servicios;
 
-        //Rutas gastronómicas
-        RutaGastronomica ruta1 = new RutaGastronomica(5, "Sabores del Sur", 6);
+    public GestorServicios() {
 
-        RutaGastronomica ruta2 = new RutaGastronomica(4, "Ruta Cervecera", 5);
+        servicios = new ArrayList<>();
 
-        //Paseo lacustres
-        PaseoLacustre paseo1 = new PaseoLacustre(3, "Lago LLanquihue", "Catamarán");
+        servicios.add(new RutaGastronomica(
+                5, "Sabores del Sur", 6));
 
-        PaseoLacustre paseo2 = new PaseoLacustre(2, "Todos los Santos", "Lancha");
+        servicios.add(new RutaGastronomica(
+                4, "Ruta Cervecera", 5));
 
-        //Excursiones culturales
-        ExcursionCultural excursion1 = new ExcursionCultural(4, "Patrimonio Aléman", "Museo Colonial");
+        servicios.add(new PaseoLacustre(
+                3, "Lago LLanquihue", "Catamarán"));
 
-        ExcursionCultural excursion2 = new ExcursionCultural(3, "Puerto Varas Histórico", "Iglesia del Sagrado Corazón");
+        servicios.add(new PaseoLacustre(
+                2, "Todos los Santos", "Lancha"));
 
-        System.out.println(ruta1);
-        System.out.println();
+        servicios.add(new ExcursionCultural(
+                4, "Patrimonio Alemán", "Museo Colonial"));
 
-        System.out.println(ruta2);
-        System.out.println();
+        servicios.add(new ExcursionCultural(
+                3, "Puerto Varas Histórico", "Iglesia del Sagrado Corazón"));
+    }
 
-        System.out.println(paseo1);
-        System.out.println();
-
-        System.out.println(paseo2);
-        System.out.println();
-
-        System.out.println(excursion1);
-        System.out.println();
-
-        System.out.println(excursion2);
+    public List<ServicioTuristico> obtenerServicios() {
+        return servicios;
     }
 }

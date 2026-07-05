@@ -1,6 +1,7 @@
 package ui;
 
 import data.GestorServicios;
+import model.ServicioTuristico;
 
 /**
  * Clase pricipal del programa.
@@ -11,6 +12,11 @@ public class Main {
 
         GestorServicios gestor = new GestorServicios();
 
-        gestor.mostrarServicios();
+        System.out.println("--- SERVICIOS TURÍSTICOS ---\n");
+
+        for (ServicioTuristico servicio : gestor.obtenerServicios()) {
+
+            servicio.mostrarInformacion();
+        }
     }
 }

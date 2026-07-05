@@ -3,7 +3,7 @@ package model;
 /**
  * Superclase que representa un servicio turístico.
  */
-public class ServicioTuristico {
+public abstract class ServicioTuristico {
 
     private String nombre;
     private int duracionHoras;
@@ -32,9 +32,9 @@ public class ServicioTuristico {
         this.duracionHoras = duracionHoras;
     }
 
-    @Override
-    public String toString() {
-        return "Nombre: " + nombre +
-                "\nDuracion: " + duracionHoras + " horas";
+    /**
+     * Método que será sobrescrito por cada subclase.
+     */
+    public abstract void mostrarInformacion();
     }
-}
+
