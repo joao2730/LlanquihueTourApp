@@ -10,7 +10,7 @@
 
 ## 📘 Descripción general del sistema
 
-LlanquihueTourApp es una aplicación desarrollada en Java para gestionar distintos servicios turísticos mediante Programación Orientada a Objetos. El sistema utiliza herencia, polimorfismo y colecciones para organizar y mostrar la información de forma flexible y escalable.
+LlanquihueTourApp es una aplicación Java que gestiona recursos de una agencia de turismo mediante interfaces, herencia, polimorfismo y colecciones. El sistema incorpora una interfaz gráfica básica para registrar entidades y visualizar su información de forma sencilla.
 
 ---
 
@@ -20,13 +20,13 @@ LlanquihueTourApp es una aplicación desarrollada en Java para gestionar distint
 LlanquihueTourApp
 │
 ├── model
-│   ├── ServicioTuristico.java
-│   ├── RutaGastronomica.java
-│   ├── PaseoLacustre.java
-│   └── ExcursionCultural.java
+│   ├── Registrable.java
+│   ├── RecursoAgencia.java
+│   ├── GuiaTuristico.java
+│   └── Vehiculo.java
 │
 ├── data
-│   └── GestorServicios.java
+│   └── GestorEntidades.java
 │
 └── ui
     └── Main.java
